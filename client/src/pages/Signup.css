@@ -1,0 +1,52 @@
+.signUpWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 80vw;
+   
+}
+
+.signUpHeader{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    width: inherit;
+}
+
+.signupbutton{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 30%;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    margin-top: 30px;
+}
+.signupbutton:disabled{
+    background-color: red;
+}
+
+.loginAccount{
+    margin-top: 50px;
+    margin-left: 10;
+    color: green;
+    cursor: pointer;
+    font-size: 18px;
+    border:none;
+    outline: none;
+
+}
+.errorMessage{
+    color: red;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}

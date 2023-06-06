@@ -1,0 +1,54 @@
+.wrapper{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    
+}
+.header{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    width: inherit;
+    margin: 20px 0;
+}
+.content{
+    padding: 18px 30px;
+    margin: 15px;
+    width: 60%;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 20px;
+    min-height: 200px;
+
+}
+
+.photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 50px;
+    width: 60%;
+
+}
+.submitButton{
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.submitButton:hover, .submitButton:disabled{
+    opacity: 1;
+}
