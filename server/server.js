@@ -5,6 +5,7 @@ const router = require("./routes/index");
 const cookieParser = require("cookie-parser");
 const errorHandler = require("./middleware/errorhandler");
 const cors = require("cors");
+const path = require("path");
 
 const corsOptions = {
   credentials: true,
@@ -21,6 +22,13 @@ app.use(router);
 dbConnect();
 app.use("/storage", express.static("storage"));
 app.use(errorHandler);
+
+//static files
+app.use(express.static(path.join(__dirname, "../client/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 
 app.listen(PORT, () => {
   console.log(`server is runing on PORT${PORT}`);
